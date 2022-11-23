@@ -27,7 +27,7 @@ import Far from './components/organs/Small copy'
 
 const router = createBrowserRouter([
   {
-    path: "/faringe",
+    path: "/",
     element: <Far position={[0, 0, 0]} />,
   },
   {
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
 
 const r = createBrowserRouter([
   {
-    path: "/faringe",
+    path: "/",
     element: <Kaue position={[0, 0, 0]} />,
   },
   {
