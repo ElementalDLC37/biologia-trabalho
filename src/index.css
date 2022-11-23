@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    background: #EDDBC0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#current-part-title {
+    position: absolute;
+    z-index: 0;
+    font-weight: 900;
+    font-size: 13vw;
+    color: red;
+    margin: 2vw;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+#button-open {
+    position: absolute;
+    z-index: 2;
+    bottom: 5vh;
+    border: none;
+    background: rgba(0, 0, 0, 0.34);
+    border-radius: 21px;
+    backdrop-filter: blur(13px);
+    height: 13vh;
+    width: 13vh;
+    color: antiquewhite;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#button-open:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#select-content {
+    position: absolute;
+    z-index: 3;
+    list-style: none;
+    top: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+#select-content > span {
+    height: 5vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.21);
+    align-items: center;
+}
+
+.select-content-list-item {
+    padding: 1vh;
+}
+
+.select-content-anchor {
+    width: 13vh;
+    height: 8vh;
+    border: none;
+    font-size: 2vh;
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 21px;
+    cursor: pointer;
+    font-family: 'Merriweather Sans', sans-serif;
+    transition: 0.2s ease-in;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.select-content-anchor:hover {
+    background: rgba(0, 0, 0, 0.55);
+    color: #EDDBC0;
+}
+
+.select-content-anchor:focus {
+    background: rgba(0, 0, 0, 0.55);
+    color: #EDDBC0;
+}
+
+#presenting-page {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(13px);
+}
+
+#button-close {
+    border-radius: 100vh;
+    padding: 1vh;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    margin: 3vh;
+    color: antiquewhite;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    height: 8vh;
+    width: 8vh;
+}
+
+#button-close:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#button-close > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
