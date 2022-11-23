@@ -82,8 +82,10 @@ const r = createBrowserRouter([
 
 const demoSheet = getProject('Demo Project').sheet('Demo Sheet')
 
-studio.initialize()
-studio.extend(extension)
+if (import.meta.env.DEV) {
+  studio.initialize()
+  studio.extend(extension)
+}
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false)
